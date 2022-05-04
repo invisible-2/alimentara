@@ -1,0 +1,12 @@
+D:\Anul_3\Practica\Alimentara\bin\Debug\Alimentara.exe.config
+D:\Anul_3\Practica\Alimentara\bin\Debug\Alimentara.exe
+D:\Anul_3\Practica\Alimentara\bin\Debug\Alimentara.pdb
+D:\Anul_3\Practica\Alimentara\bin\Debug\MaterialSkin.dll
+D:\Anul_3\Practica\Alimentara\obj\Debug\Alimentara.csproj.AssemblyReference.cache
+D:\Anul_3\Practica\Alimentara\obj\Debug\Alimentara.Properties.Resources.resources
+D:\Anul_3\Practica\Alimentara\obj\Debug\Alimentara.csproj.GenerateResource.cache
+D:\Anul_3\Practica\Alimentara\obj\Debug\Alimentara.csproj.CoreCompileInputs.cache
+D:\Anul_3\Practica\Alimentara\obj\Debug\Alimentara.csproj.CopyComplete
+D:\Anul_3\Practica\Alimentara\obj\Debug\Alimentara.exe
+D:\Anul_3\Practica\Alimentara\obj\Debug\Alimentara.pdb
+D:\Anul_3\Practica\Alimentara\obj\Debug\Alimentara.FormAlimentara.resources
