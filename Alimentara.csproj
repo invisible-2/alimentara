@@ -57,16 +57,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connection.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormOperatii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOperatii.Designer.cs">
+      <DependentUpon>FormOperatii.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOperatii.resx">
+      <DependentUpon>FormOperatii.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -100,6 +110,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Photos\login_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\add_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\market.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\find_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\update_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\delete_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

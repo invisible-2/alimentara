@@ -35,24 +35,16 @@ namespace Alimentara
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            FormOperatii formOperatii = new FormOperatii();
+            formOperatii.ShowDialog();
 
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void materialRaisedButton1_Click(object sender, EventArgs e)
-        {
-            //tabPage2.Dispose();
-            tabPage2.Show();
-            tabPage2.
+            this.Show();
+            DialogResult dialog = MessageBox.Show("Doriti sa inchideti fereastra?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialog == DialogResult.Yes) 
+                this.Close();
+            
+            
         }
     }
 }

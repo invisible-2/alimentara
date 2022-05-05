@@ -10,3 +10,4 @@ D:\Anul_3\Practica\Alimentara\obj\Debug\Alimentara.csproj.CopyComplete
 D:\Anul_3\Practica\Alimentara\obj\Debug\Alimentara.exe
 D:\Anul_3\Practica\Alimentara\obj\Debug\Alimentara.pdb
 D:\Anul_3\Practica\Alimentara\obj\Debug\Alimentara.FormAlimentara.resources
+D:\Anul_3\Practica\Alimentara\obj\Debug\Alimentara.FormOperatii.resources
