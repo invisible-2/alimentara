@@ -29,55 +29,103 @@ namespace Alimentara
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAlimentara));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.checkBoxUser = new System.Windows.Forms.CheckBox();
+            this.checkBoxAdmin = new System.Windows.Forms.CheckBox();
+            this.btnLogInAsNewUser = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPass = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.checkBoxUser);
+            this.panel1.Controls.Add(this.checkBoxAdmin);
+            this.panel1.Controls.Add(this.btnLogInAsNewUser);
+            this.panel1.Controls.Add(this.btnLogin);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.txtPass);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Location = new System.Drawing.Point(2, 86);
+            this.panel1.Controls.Add(this.txtUsername);
+            this.panel1.Location = new System.Drawing.Point(-2, 67);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(351, 620);
+            this.panel1.Size = new System.Drawing.Size(355, 639);
             this.panel1.TabIndex = 6;
             // 
-            // button1
+            // checkBoxUser
             // 
-            this.button1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::Alimentara.Properties.Resources.login_icon;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(69, 404);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(209, 74);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "LOG IN";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.checkBoxUser.AutoSize = true;
+            this.checkBoxUser.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxUser.Location = new System.Drawing.Point(196, 143);
+            this.checkBoxUser.Name = "checkBoxUser";
+            this.checkBoxUser.Size = new System.Drawing.Size(69, 24);
+            this.checkBoxUser.TabIndex = 12;
+            this.checkBoxUser.Text = "User";
+            this.checkBoxUser.UseVisualStyleBackColor = true;
+            this.checkBoxUser.CheckedChanged += new System.EventHandler(this.checkBoxUser_CheckedChanged);
+            // 
+            // checkBoxAdmin
+            // 
+            this.checkBoxAdmin.AutoSize = true;
+            this.checkBoxAdmin.Checked = true;
+            this.checkBoxAdmin.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBoxAdmin.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAdmin.Location = new System.Drawing.Point(89, 143);
+            this.checkBoxAdmin.Name = "checkBoxAdmin";
+            this.checkBoxAdmin.Size = new System.Drawing.Size(87, 24);
+            this.checkBoxAdmin.TabIndex = 11;
+            this.checkBoxAdmin.Text = "Admin";
+            this.checkBoxAdmin.UseVisualStyleBackColor = true;
+            this.checkBoxAdmin.CheckedChanged += new System.EventHandler(this.checkBoxAdmin_CheckedChanged);
+            // 
+            // btnLogInAsNewUser
+            // 
+            this.btnLogInAsNewUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogInAsNewUser.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogInAsNewUser.Location = new System.Drawing.Point(14, 580);
+            this.btnLogInAsNewUser.Name = "btnLogInAsNewUser";
+            this.btnLogInAsNewUser.Size = new System.Drawing.Size(187, 41);
+            this.btnLogInAsNewUser.TabIndex = 10;
+            this.btnLogInAsNewUser.Text = "Create new USER";
+            this.btnLogInAsNewUser.UseVisualStyleBackColor = true;
+            this.btnLogInAsNewUser.Click += new System.EventHandler(this.btnLogInAsNewUser_Click);
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Image = global::Alimentara.Properties.Resources.login_icon;
+            this.btnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogin.Location = new System.Drawing.Point(69, 404);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(226, 72);
+            this.btnLogin.TabIndex = 9;
+            this.btnLogin.Text = "LOG IN";
+            this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(103, 110);
+            this.label3.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label3.Location = new System.Drawing.Point(113, 81);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(115, 32);
+            this.label3.Size = new System.Drawing.Size(129, 34);
             this.label3.TabIndex = 8;
             this.label3.Text = "LOG IN";
             // 
@@ -85,52 +133,64 @@ namespace Alimentara
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label2.Location = new System.Drawing.Point(19, 287);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 25);
+            this.label2.Size = new System.Drawing.Size(128, 29);
             this.label2.TabIndex = 7;
             this.label2.Text = "Password";
             // 
-            // textBox2
+            // txtPass
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(147, 276);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(163, 36);
-            this.textBox2.TabIndex = 6;
+            this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPass.ForeColor = System.Drawing.Color.Black;
+            this.txtPass.Location = new System.Drawing.Point(163, 288);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.PasswordChar = '*';
+            this.txtPass.Size = new System.Drawing.Size(163, 30);
+            this.txtPass.TabIndex = 6;
+            this.txtPass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPass_KeyPress);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label1.Location = new System.Drawing.Point(19, 225);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 25);
+            this.label1.Size = new System.Drawing.Size(132, 29);
             this.label1.TabIndex = 5;
             this.label1.Text = "Username";
             // 
-            // textBox1
+            // txtUsername
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(147, 213);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(163, 37);
-            this.textBox1.TabIndex = 4;
+            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.ForeColor = System.Drawing.Color.Black;
+            this.txtUsername.Location = new System.Drawing.Point(163, 229);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(163, 30);
+            this.txtUsername.TabIndex = 4;
+            this.txtUsername.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsername_KeyPress);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Location = new System.Drawing.Point(351, 67);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(799, 639);
+            this.panel2.TabIndex = 7;
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Alimentara.Properties.Resources.shop;
-            this.pictureBox1.Location = new System.Drawing.Point(455, 86);
+            this.pictureBox1.Location = new System.Drawing.Point(83, 25);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(650, 602);
+            this.pictureBox1.Size = new System.Drawing.Size(650, 595);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -140,14 +200,16 @@ namespace Alimentara
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1150, 700);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FormAlimentara";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alimentara";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -155,13 +217,17 @@ namespace Alimentara
 
         #endregion
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtPass;
+        private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnLogInAsNewUser;
+        private System.Windows.Forms.CheckBox checkBoxUser;
+        private System.Windows.Forms.CheckBox checkBoxAdmin;
     }
 }
 

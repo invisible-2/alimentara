@@ -93,6 +93,16 @@ namespace Alimentara.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap info_icon {
+            get {
+                object obj = ResourceManager.GetObject("info_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap login_icon {
             get {
                 object obj = ResourceManager.GetObject("login_icon", resourceCulture);
@@ -116,6 +126,26 @@ namespace Alimentara.Properties {
         internal static System.Drawing.Bitmap menu_lines_hamburger_icon {
             get {
                 object obj = ResourceManager.GetObject("menu_lines_hamburger_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reset_icon {
+            get {
+                object obj = ResourceManager.GetObject("reset_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sale_img {
+            get {
+                object obj = ResourceManager.GetObject("sale_img", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
